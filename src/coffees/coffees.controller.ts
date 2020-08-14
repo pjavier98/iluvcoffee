@@ -11,4 +11,10 @@ export class CoffeesController {
     findOne(@Param('id') id: string): string {
         return `This action returns #${id} coffees`;
     }
+
+    @Post()
+    create(@Body() body) {
+        return body;
+        // return `this action creates a coffee`;
+    }
 }
